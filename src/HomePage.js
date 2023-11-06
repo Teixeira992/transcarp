@@ -1,6 +1,5 @@
 import React from 'react';
 import ContentContainer from './ContentContainer';
-import HexagonImage from './HexagonImage';
 import { Col, Row, Card } from 'react-bootstrap';
 import { BsTelephonePlusFill, BsPencilSquare } from 'react-icons/bs';
 
@@ -20,21 +19,23 @@ function HomePage() {
         </div>
       </div>
       <ContentContainer>
-        <Row className='homep-first-div'>
-          <Col>
-            <HexagonImage imageUrl={imageUrl} />
-          </Col>
-          <Col>
-            <div className='title'>Titulo/Frase</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.</p>
-          </Col>
+        <Row>
+          <div className="homep-first-div">
+            <div className="homep-first-div-img">
+              <img src={imageUrl} alt="Hexagon" />
+            </div>
+            <div className="homep-first-div-text">
+              <div className='homep-first-div-title'>Titulo/Frase</div>
+              <p className='homep-first-div-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
         </Row>
         <div className='title-homep-servicos'>Os nossos Serviços</div>
-        <Row>
+        <Row md={3} style={{ display: 'flex', justifyContent: 'center' }}>
           <Col>
             <Card className="bg-dark text-white card-highlight">
               <Card.Img src={imageUrl} alt="Card image" />
@@ -61,7 +62,7 @@ function HomePage() {
           </Col>
         </Row>
         <br></br>
-        <Row>
+        <Row md={3} style={{ display: 'flex', justifyContent: 'center' }} >
           <Col>
             <Card className="bg-dark text-white card-highlight">
               <Card.Img src={imageUrl} alt="Card image" />
@@ -78,23 +79,8 @@ function HomePage() {
               </Card.ImgOverlay>
             </Card>
           </Col>
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 6</Card.Title>
-              </Card.ImgOverlay>
-            </Card>
-          </Col>
         </Row>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '100px' }}>
           <Card className='card-homep-contactos'>
             <Card.Body className='card-body-homep-contactos'>
               <Card.Text className='card-body-homep-contactos-text'>
