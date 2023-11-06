@@ -4,7 +4,7 @@ import SidebarMenu from './SideBar';
 import { BsJustify } from 'react-icons/bs';
 import HomePage from './HomePage';
 import Footer from './Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Contactos from './Contactos';
 import Servicos from './Servicos';
 import Empresa from './Empresa';
@@ -42,15 +42,13 @@ const App = () => {
         </Nav>
       </Navbar>
       <SidebarMenu showMenu={showMenu} toggleMenu={toggleMenu} />
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/contactos" element={<Contactos />} />
-          <Route path="/empresa" element={<Empresa />} />
-          <Route path="/servicos" element={<Servicos />} />
-          <Route path="/40anos" element={<Aniversario />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contactos" element={<Contactos />} />
+        <Route path="/empresa" element={<Empresa />} />
+        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/40anos" element={<Aniversario />} />
+      </Routes>
       <Footer />
     </div>
   );
