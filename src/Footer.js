@@ -19,9 +19,6 @@ function Footer() {
                         <Col style={{ borderRight: '1px solid #ccc' }}>
                             <h4>Serviços</h4>
                         </Col>
-                        <Col style={{ borderRight: '1px solid #ccc' }}>
-                            <h4>Frota</h4>
-                        </Col>
                         <Col>
                             <h4>Contactos</h4>
                         </Col>
