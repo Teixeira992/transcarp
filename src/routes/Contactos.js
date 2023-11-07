@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentContainer from './ContentContainer';
+import ContentContainer from '../ContentContainer';
 import { Card, Col, Row } from 'react-bootstrap';
 
 function Contactos() {

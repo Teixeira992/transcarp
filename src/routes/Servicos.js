@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import ContentContainer from './ContentContainer';
+import ContentContainer from '../ContentContainer';
 import { Col, Row, Card, Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 
