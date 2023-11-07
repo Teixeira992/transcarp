@@ -12,19 +12,19 @@ function SidebarMenu({ showMenu, toggleMenu }) {
                 <Offcanvas.Body>
                     <Nav as="ul" className="flex-column">
                         <li className='custom-list-item'>
-                            <Nav.Link href="/" className='custom-link'>Página Inicial</Nav.Link>
+                            <Nav.Link href="#/" className='custom-link'>Página Inicial</Nav.Link>
                         </li>
                         <li className='custom-list-item'>
-                            <Nav.Link href="/empresa" className='custom-link'>Empresa</Nav.Link>
+                            <Nav.Link href="#/empresa" className='custom-link'>Empresa</Nav.Link>
                         </li>
                         <li className='custom-list-item'>
-                            <Nav.Link href="/servicos" className='custom-link'>Serviços</Nav.Link>
+                            <Nav.Link href="#/servicos" className='custom-link'>Serviços</Nav.Link>
                         </li>
                         <li className='custom-list-item'>
-                            <Nav.Link href="/contactos" className='custom-link'>Contactos</Nav.Link>
+                            <Nav.Link href="#/contactos" className='custom-link'>Contactos</Nav.Link>
                         </li>
                         <li className='custom-list-item'>
-                            <Nav.Link href="/40anos" className='custom-link'>40º Aniversário</Nav.Link>
+                            <Nav.Link href="#/40anos" className='custom-link'>40º Aniversário</Nav.Link>
                         </li>
                     </Nav>
                 </Offcanvas.Body>
