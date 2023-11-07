@@ -1,5 +1,5 @@
 import React from 'react';
-import ContentContainer from './ContentContainer';
+import ContentContainer from '../ContentContainer';
 import { Col, Row, Card } from 'react-bootstrap';
 import { BsTelephonePlusFill, BsPencilSquare } from 'react-icons/bs';
 
