@@ -1,12 +1,12 @@
 import React from 'react';
-import ContentContainer from '../ContentContainer';
+import ContentContainer from './ContentContainer';
 import { Col, Row, Card } from 'react-bootstrap';
 import { BsTelephonePlusFill, BsPencilSquare } from 'react-icons/bs';
 
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
-  const videoMP4 = `${process.env.PUBLIC_URL}/transcarp_1min.mp4`;
+  const videoMP4 = `${process.env.PUBLIC_URL}/transcarp.mp4`;
   return (
     <div>
       <div style={{ position: 'relative' }}>

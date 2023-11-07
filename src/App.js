@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import SidebarMenu from './SideBar';
 import { BsJustify } from 'react-icons/bs';
-import HomePage from './routes/HomePage';
+import HomePage from './HomePage';
 import Footer from './Footer';
 import { Routes, Route } from 'react-router-dom';
-import Contactos from './routes/Contactos';
-import Servicos from './routes/Servicos';
+import Contactos from './Contactos';
+import Servicos from './Servicos';
 import Empresa from './Empresa';
-import Aniversario from './routes/Aniversario';
+import Aniversario from './Aniversario';
 
 
 const App = () => {
