@@ -13,7 +13,7 @@ function Aniversario() {
     textAlign: 'center',
     fontSize: '200px',
     fontWeight: '900',
-    width: '100%',
+    maxWidth: '100%',
     height: '300px',
     display: 'flex',
     alignItems: 'center',

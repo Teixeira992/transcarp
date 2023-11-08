@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook } from 'react-icons/fa';
 
 function Footer() {
@@ -7,35 +6,38 @@ function Footer() {
 
     return (
         <footer>
-            <Container>
-                <div className="first-div">
-                    <Row>
-                        <Col style={{ borderRight: '1px solid #ccc' }}>
-                            <h4>Empresa</h4>
-                            <p> Sobre nós</p>
-                            <p> Galeria</p>
-                            <p> Certificações</p>
-                        </Col>
-                        <Col style={{ borderRight: '1px solid #ccc' }}>
-                            <h4>Serviços</h4>
-                        </Col>
-                        <Col>
-                            <h4>Contactos</h4>
-                        </Col>
-                    </Row>
+            <div className="footer-content">
+                <div className="footer-column">
+                    <h4>Empresa</h4>
+                    <br></br>
+                    <p>Sobre nós</p>
+                    <p>Galeria</p>
+                    <p>Certificações</p>
                 </div>
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <br></br>
+                    <p>Os nossos Serviços</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Contactos</h4>
+                    <br></br>
+                    <p>Contactos</p>
+                    <p>Morada</p>
+                    <p>Pedidos de Cotação</p>
+                </div>
+            </div>
 
-                <div className="second-div">
-                    <div className="social-icons">
-                        <a href="https://www.facebook.com">
-                            <FaFacebook />
-                        </a>
-                    </div>
-                    <div className="logo">
-                        <img src={logo} alt="Logo" className='logo-img' />
-                    </div>
+            <div className="second-div">
+                <div className="social-icons">
+                    <a href="https://www.facebook.com">
+                        <FaFacebook />
+                    </a>
                 </div>
-            </Container>
+                <div className="logo">
+                    <img src={logo} alt="Logo" className='logo-img' />
+                </div>
+            </div>
         </footer>
     );
 }

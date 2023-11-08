@@ -19,18 +19,14 @@ function HomePage() {
 
   return (
     <div>
-      <div style={{ height: '400px', position: 'relative' }}>
+      <div style={{ maxWidth: '100%', height: '50vh', position: 'relative' }}>
         <div
-          style={{
-            width: '100%',
-            height: '100%',
-          }}
-          className=""
+          className="scrollable-content"
         >
           <div
             style={{
-              width: '100%',
-              height: '400px',
+              maxWidth: '100%',
+              height: '50vh',
               backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6894.jpg)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
