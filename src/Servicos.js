@@ -40,7 +40,7 @@ function HomePage() {
         </div>
           */}
         <div className='servicos-title'>Os nossos serviços</div>
-        <Row md={3} className='servicos-row'>
+        <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ1Show(true)} className='servicos-card'>
               <Card.Img variant="top" src={imageUrl} alt="Card image" />
@@ -165,6 +165,8 @@ function HomePage() {
               </Row>
             </Modal.Body>
           </Modal>
+        </Row>
+        <Row md={3} xs={1} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ4Show(true)} className='servicos-card'>
               <Card.Img variant="top" src={imageUrl} alt="Card image" />

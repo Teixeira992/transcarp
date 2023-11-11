@@ -1,8 +1,12 @@
 import React from 'react';
 import ContentContainer from './ContentContainer';
 import { Col, Row, Card } from 'react-bootstrap';
-import { BsTelephonePlusFill, BsPencilSquare } from 'react-icons/bs';
-
+import { BsTelephonePlusFill, BsPencilSquare, BsBoxes } from 'react-icons/bs';
+import { FaWarehouse, FaHome, FaTruckMoving, FaAmbulance, FaGlobe, FaTruck, FaBoxes } from 'react-icons/fa';
+import { PiTruck } from 'react-icons/pi';
+import { TbUrgent, TbHomeMove } from 'react-icons/tb';
+import { FaTruckFast } from 'react-icons/fa6';
+import { MdStorage } from 'react-icons/md';
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
@@ -23,7 +27,7 @@ function HomePage() {
               <img src={imageUrl} alt="Hexagon" />
             </div>
             <div className="homep-first-div-text">
-              <div className='homep-first-div-title'>Conectamos destinos, entregamos excelência.</div>
+              <div className='homep-first-div-title'>Conectamos destinos, entregamos excelência</div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
@@ -34,47 +38,50 @@ function HomePage() {
         </Row>
         <div className='title-homep-servicos'>Os nossos Serviços</div>
         <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }}>
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 1</Card.Title>
-              </Card.ImgOverlay>
+          <Col className='servicos-col'>
+            <Card className="card-highlight">
+              <span><PiTruck size={80} style={{ marginRight: '30px' }}></PiTruck > <FaGlobe size={70}></FaGlobe></span>
+              <Card.Text className='card-highlight-text'>
+                <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
+              </Card.Text>
             </Card>
           </Col>
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 2</Card.Title>
-              </Card.ImgOverlay>
+          <Col className='servicos-col' >
+            <Card className="card-highlight">
+              <FaHome size={75}></FaHome >
+              <Card.Text className='card-highlight-text'>
+                <Card.Title className='card-highlight-text' > DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
+              </Card.Text>
             </Card>
           </Col>
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 3</Card.Title>
-              </Card.ImgOverlay>
+          <Col className='servicos-col' >
+            <Card className="card-highlight">
+              <span><FaWarehouse size={75} style={{ marginRight: '30px' }}></FaWarehouse>
+                <BsBoxes size={75}></BsBoxes></span>
+              <Card.Text className='card-highlight-text'>
+                <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
+              </Card.Text>
             </Card>
           </Col>
         </Row>
         <br></br>
         <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} >
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 4</Card.Title>
-              </Card.ImgOverlay>
+          <Col className='servicos-col'>
+            <Card className="card-highlight">
+              <span><FaTruckFast size={75} style={{ marginRight: '30px' }}></FaTruckFast >
+                <TbUrgent size={75}></TbUrgent></span>
+              <Card.Text className='card-highlight-text'>
+                <Card.Title>TRANSPORTES URGENTES</Card.Title>
+              </Card.Text>
             </Card>
           </Col>
-          <Col>
-            <Card className="bg-dark text-white card-highlight">
-              <Card.Img src={imageUrl} alt="Card image" />
-              <Card.ImgOverlay>
-                <Card.Title>Serviço 5</Card.Title>
-              </Card.ImgOverlay>
+          <Col className='servicos-col'>
+            <Card className="card-highlight">
+              <span><FaTruckMoving size={75} style={{ marginRight: '30px' }}></FaTruckMoving >
+                <TbHomeMove size={75}></TbHomeMove></span>
+              <Card.Text className='card-highlight-text'>
+                <Card.Title>MUDANÇAS</Card.Title>
+              </Card.Text>
             </Card>
           </Col>
         </Row>

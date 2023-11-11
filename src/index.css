@@ -326,6 +326,24 @@ footer {
   }
 }
 
+
+.card-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  min-height: 240px;
+  background-color: rgba(63, 104, 26, 0.2) !important;
+}
+
+.card-highlight-text {
+  margin-top: 20px;
+}
+
+
 .card-highlight:hover {
   transform: scale(1.05);
   transition: transform 0.7s ease;
@@ -371,9 +389,10 @@ footer {
 
 .servicos-row {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   padding-top: 30px;
+  justify-content: center;
 }
 
 .servicos-col {
