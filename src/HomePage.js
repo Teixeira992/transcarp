@@ -2,11 +2,10 @@ import React from 'react';
 import ContentContainer from './ContentContainer';
 import { Col, Row, Card } from 'react-bootstrap';
 import { BsTelephonePlusFill, BsPencilSquare, BsBoxes } from 'react-icons/bs';
-import { FaWarehouse, FaHome, FaTruckMoving, FaAmbulance, FaGlobe, FaTruck, FaBoxes } from 'react-icons/fa';
+import { FaWarehouse, FaHome, FaTruckMoving, FaGlobe } from 'react-icons/fa';
 import { PiTruck } from 'react-icons/pi';
 import { TbUrgent, TbHomeMove } from 'react-icons/tb';
 import { FaTruckFast } from 'react-icons/fa6';
-import { MdStorage } from 'react-icons/md';
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
