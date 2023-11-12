@@ -241,45 +241,66 @@ footer {
 
 .homep-first-div-title {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .homep-first-div {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .homep-first-div-img {
-  flex: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .homep-first-div-img img {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 .homep-first-div-text {
-  flex: 0.8;
-  padding: 0 0 20px 35px;
+  padding: 20px 10px;
 }
 
 .homep-first-div-text p {
   text-align: justify;
-  font-size: 15px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .homep-first-div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .homep-first-div-img {
+    flex: 0.9;
+    text-align: left;
+    align-self: center;
+
+  }
+
+  .homep-first-div-img img {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  .homep-first-div-text {
+    flex: 0.8;
+    padding: 0 35px 0px 10px;
+    align-self: center;
+  }
 }
 
 .title-homep-servicos {
   font-weight: bold;
   font-size: 50px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 50px;
 }
 

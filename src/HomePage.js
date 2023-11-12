@@ -20,7 +20,7 @@ function HomePage() {
         </div>
       </div>
       <ContentContainer>
-        <Row xs={12}>
+        <Row>
           <div className="homep-first-div">
             <div className="homep-first-div-img">
               <img src={imageUrl} alt="Hexagon" />
