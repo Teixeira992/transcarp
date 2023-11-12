@@ -1,29 +1,15 @@
 import React from 'react';
 import ContentContainer from './ContentContainer';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 
 function Aniversario() {
   const anivImg = `${process.env.PUBLIC_URL}/IMG_8738.JPG`;
 
-  const divStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6856.jpg)`, // Caminho para a imagem de fundo
-    backgroundSize: 'cover',
-    color: 'white',
-    textAlign: 'center',
-    fontSize: '200px',
-    fontWeight: '900',
-    maxWidth: '100%',
-    height: '300px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  };
-
   return (
     <div>
-      <div style={divStyle}>
-        <div >40ºAniversário</div>
+      <div className="backgroundDiv" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6856.jpg)` }}>
+        <div className="textDiv">40º Aniversário</div>
       </div>
       <ContentContainer>
         <Row>

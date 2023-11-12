@@ -473,13 +473,14 @@ footer {
 
 .container-aniv {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
+.texto-aniv,
 .imagem-aniv {
-  flex: 1;
-  /* A imagem ocupará 1/2 do espaço disponível */
-  text-align: right;
+  width: 100%;
+  text-align: justify;
+  padding: 0;
 }
 
 .imagem-aniv img {
@@ -487,13 +488,45 @@ footer {
   clip-path: polygon(0 65%, 15% 95%, 84% 95%, 100% 45%, 86% 9%, 15% 9%);
 }
 
-.texto-aniv {
-  flex: 1.2;
-  /* O texto ocupará 1/2 do espaço disponível */
-  padding: 0 50px 0 0;
+@media (min-width: 768px) {
+  .container-aniv {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texto-aniv {
+    flex: 1.2;
+    padding: 0 50px 0 0;
+    text-align: justify;
+  }
+
+  .imagem-aniv {
+    flex: 1;
+    text-align: right;
+  }
+
+  .imagem-aniv img {
+    clip-path: polygon(0 65%, 15% 95%, 84% 95%, 100% 45%, 86% 9%, 15% 9%);
+  }
 }
 
-.texto-aniv p {
-  text-align: justify;
-  font-size: 15px;
+.backgroundDiv {
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 12vw;
+  font-weight: 900;
+  min-width: 100%;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+  .backgroundDiv {
+    font-size: 10vw;
+    height: 18vh;
+  }
 }
