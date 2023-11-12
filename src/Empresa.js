@@ -14,7 +14,6 @@ import photos from './photos';
 
 function HomePage() {
   const [index, setIndex] = useState(-1);
-  const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
   const certUrl = `${process.env.PUBLIC_URL}/certificado.png`;
 
   return (
