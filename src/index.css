@@ -140,7 +140,18 @@ footer {
   border-right: 1px solid #ccc;
   text-align: center;
   box-sizing: border-box;
+  color: #fff;
 }
+
+.footer-column a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-column a:hover {
+  color: #F9A800;
+}
+
 
 .footer-column:last-child {
   border-right: none;
@@ -358,6 +369,7 @@ footer {
   width: 100%;
   min-height: 240px;
   background-color: rgba(63, 104, 26, 0.2) !important;
+  cursor: pointer;
 }
 
 .card-highlight-text {
@@ -418,6 +430,10 @@ footer {
 
 .servicos-col {
   display: flex;
+}
+
+.servicos-card {
+  cursor: pointer;
 }
 
 .card-image {

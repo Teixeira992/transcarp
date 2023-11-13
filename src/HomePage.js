@@ -6,6 +6,8 @@ import { FaWarehouse, FaHome, FaTruckMoving, FaGlobe } from 'react-icons/fa';
 import { PiTruck } from 'react-icons/pi';
 import { TbUrgent, TbHomeMove } from 'react-icons/tb';
 import { FaTruckFast } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
+
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
@@ -36,54 +38,56 @@ function HomePage() {
           </div>
         </Row>
         <div className='title-homep-servicos'>Os nossos Serviços</div>
-        <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }}>
-          <Col className='servicos-col'>
-            <Card className="card-highlight">
-              <span><PiTruck size={80} style={{ marginRight: '30px' }}></PiTruck > <FaGlobe size={70}></FaGlobe></span>
-              <Card.Text className='card-highlight-text'>
-                <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
-              </Card.Text>
-            </Card>
-          </Col>
-          <Col className='servicos-col' >
-            <Card className="card-highlight">
-              <FaHome size={75}></FaHome >
-              <Card.Text className='card-highlight-text'>
-                <Card.Title className='card-highlight-text' > DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
-              </Card.Text>
-            </Card>
-          </Col>
-          <Col className='servicos-col' >
-            <Card className="card-highlight">
-              <span><FaWarehouse size={75} style={{ marginRight: '30px' }}></FaWarehouse>
-                <BsBoxes size={75}></BsBoxes></span>
-              <Card.Text className='card-highlight-text'>
-                <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
-              </Card.Text>
-            </Card>
-          </Col>
-        </Row>
-        <br></br>
-        <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} >
-          <Col className='servicos-col'>
-            <Card className="card-highlight">
-              <span><FaTruckFast size={75} style={{ marginRight: '30px' }}></FaTruckFast >
-                <TbUrgent size={75}></TbUrgent></span>
-              <Card.Text className='card-highlight-text'>
-                <Card.Title>TRANSPORTES URGENTES</Card.Title>
-              </Card.Text>
-            </Card>
-          </Col>
-          <Col className='servicos-col'>
-            <Card className="card-highlight">
-              <span><FaTruckMoving size={75} style={{ marginRight: '30px' }}></FaTruckMoving >
-                <TbHomeMove size={75}></TbHomeMove></span>
-              <Card.Text className='card-highlight-text'>
-                <Card.Title>MUDANÇAS</Card.Title>
-              </Card.Text>
-            </Card>
-          </Col>
-        </Row>
+        <Link to="/servicos" style={{ textDecoration: "none" }}>
+          <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }}>
+            <Col className='servicos-col'>
+              <Card className="card-highlight">
+                <span><PiTruck size={80} style={{ marginRight: '30px' }}></PiTruck > <FaGlobe size={70}></FaGlobe></span>
+                <Card.Text className='card-highlight-text'>
+                  <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
+                </Card.Text>
+              </Card>
+            </Col>
+            <Col className='servicos-col' >
+              <Card className="card-highlight">
+                <FaHome size={75}></FaHome >
+                <Card.Text className='card-highlight-text'>
+                  <Card.Title className='card-highlight-text' > DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
+                </Card.Text>
+              </Card>
+            </Col>
+            <Col className='servicos-col' >
+              <Card className="card-highlight">
+                <span><FaWarehouse size={75} style={{ marginRight: '30px' }}></FaWarehouse>
+                  <BsBoxes size={75}></BsBoxes></span>
+                <Card.Text className='card-highlight-text'>
+                  <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
+                </Card.Text>
+              </Card>
+            </Col>
+          </Row>
+          <br></br>
+          <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} >
+            <Col className='servicos-col'>
+              <Card className="card-highlight">
+                <span><FaTruckFast size={75} style={{ marginRight: '30px' }}></FaTruckFast >
+                  <TbUrgent size={75}></TbUrgent></span>
+                <Card.Text className='card-highlight-text'>
+                  <Card.Title>TRANSPORTES URGENTES</Card.Title>
+                </Card.Text>
+              </Card>
+            </Col>
+            <Col className='servicos-col'>
+              <Card className="card-highlight">
+                <span><FaTruckMoving size={75} style={{ marginRight: '30px' }}></FaTruckMoving >
+                  <TbHomeMove size={75}></TbHomeMove></span>
+                <Card.Text className='card-highlight-text'>
+                  <Card.Title>MUDANÇAS</Card.Title>
+                </Card.Text>
+              </Card>
+            </Col>
+          </Row>
+        </Link>
         <div className="row justify-content-center" style={{ marginTop: '100px' }}>
           <div className="col-12 col-md-6 d-flex justify-content-center">
             <Card className='card-homep-contactos card-large'>
@@ -92,7 +96,7 @@ function HomePage() {
                   <BsTelephonePlusFill size={50}></BsTelephonePlusFill>
                   <br></br>
                   <br></br>
-                  <h1>Contacte-nos</h1>
+                  <a href='#/contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Contacte-nos</h1></a>
                   <br></br>
                   <p>+351 123123123</p>
                   <p>+351 123123123</p>
@@ -107,7 +111,7 @@ function HomePage() {
                   <BsPencilSquare size={50}></BsPencilSquare>
                   <br></br>
                   <br></br>
-                  <h1>Peça uma Cotação</h1>
+                  <a href='#/contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
                   <br></br>
                   <p>Preencha o formulário para que consigamos dar a melhor solução ao seu pedido</p>
                 </Card.Text>
