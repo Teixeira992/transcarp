@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/transcarp/static/css/main.4294fb90.css",
-    "main.js": "/transcarp/static/js/main.84c3a30c.js",
+    "main.css": "/transcarp/static/css/main.6bb2e3d8.css",
+    "main.js": "/transcarp/static/js/main.2648088a.js",
     "static/js/787.6f0235c2.chunk.js": "/transcarp/static/js/787.6f0235c2.chunk.js",
     "index.html": "/transcarp/index.html",
-    "main.4294fb90.css.map": "/transcarp/static/css/main.4294fb90.css.map",
-    "main.84c3a30c.js.map": "/transcarp/static/js/main.84c3a30c.js.map",
+    "main.6bb2e3d8.css.map": "/transcarp/static/css/main.6bb2e3d8.css.map",
+    "main.2648088a.js.map": "/transcarp/static/js/main.2648088a.js.map",
     "787.6f0235c2.chunk.js.map": "/transcarp/static/js/787.6f0235c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4294fb90.css",
-    "static/js/main.84c3a30c.js"
+    "static/css/main.6bb2e3d8.css",
+    "static/js/main.2648088a.js"
   ]
 }
