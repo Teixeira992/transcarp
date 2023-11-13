@@ -18,20 +18,12 @@ function HomePage() {
 
   return (
     <div>
-      <div style={{ maxWidth: '100%', height: '50vh', position: 'relative' }}>
+      <div className="scrollable-content">
         <div
-          className="scrollable-content"
-        >
-          <div
-            style={{
-              maxWidth: '100%',
-              height: '50vh',
-              backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6894.jpg)`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
-        </div>
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6894.jpg)`
+          }} className='content-image'
+        ></div>
       </div>
       <ContentContainer>
         <div>

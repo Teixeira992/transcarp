@@ -59,21 +59,13 @@ function Contactos() {
   };
   return (
     <div>
-      <div style={{ maxWidth: '100%', height: '50vh', position: 'relative' }}>
+      <div className="scrollable-content">
         <div
-          className="scrollable-content"
-        >
-          <div
-            style={{
-              maxWidth: '100%',
-              height: '50vh',
-              backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6904.jpg)`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              opacity: 0.5
-            }}
-          ></div>
-        </div>
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6904.jpg)`,
+            opacity: 0.5
+          }} className='content-image'
+        ></div>
       </div>
       <ContentContainer>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
