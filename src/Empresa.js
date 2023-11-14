@@ -17,7 +17,7 @@ function HomePage() {
   const certUrl = `${process.env.PUBLIC_URL}/certificado.png`;
 
   return (
-    <div>
+    <div id='empresa'>
       <div className="scrollable-content">
         <div
           style={{

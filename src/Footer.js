@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 function Footer() {
     const logo = `${process.env.PUBLIC_URL}/logo.png`;
@@ -8,35 +7,35 @@ function Footer() {
         <footer>
             <div className="footer-content">
                 <div className="footer-column">
-                    <Link to="/empresa">
+                    <a href="#empresa">
                         <h4>Empresa</h4>
                         <br></br>
                         <p>Sobre nós</p>
                         <p>Galeria</p>
                         <p>Certificações</p>
-                    </Link>
+                    </a>
                 </div>
                 <div class="footer-column">
-                    <Link to="/servicos">
+                    <a href="#servicos">
                         <h4>Serviços</h4>
                         <br></br>
                         <p>Os nossos Serviços</p>
-                    </Link>
+                    </a>
                 </div>
                 <div class="footer-column">
-                    <Link to="/contactos">
+                    <a href="#contactos">
                         <h4>Contactos</h4>
                         <br></br>
                         <p>Contactos</p>
                         <p>Morada</p>
                         <p>Pedidos de Cotação</p>
-                    </Link>
+                    </a>
                 </div>
             </div>
 
             <div className="second-div">
                 <div className="social-icons">
-                    <a href="https://www.facebook.com" target='blank'>
+                    <a href="https://www.facebook.com/profile.php?id=100063475000796" target='blank'>
                         <FaFacebook />
                     </a>
                 </div>

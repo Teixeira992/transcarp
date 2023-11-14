@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import SidebarMenu from './SideBar';
 import { BsJustify } from 'react-icons/bs';
 import HomePage from './HomePage';
 import Footer from './Footer';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Contactos from './Contactos';
 import Servicos from './Servicos';
 import Empresa from './Empresa';
 import Aniversario from './Aniversario';
+import PaginaDeErro from './PaginaDeErro';
 
 
 const App = () => {
@@ -43,11 +44,13 @@ const App = () => {
       </Navbar>
       <SidebarMenu showMenu={showMenu} toggleMenu={toggleMenu} />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/contactos" element={<Contactos />} />
         <Route path="/empresa" element={<Empresa />} />
         <Route path="/servicos" element={<Servicos />} />
         <Route path="/40anos" element={<Aniversario />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<PaginaDeErro />} />
       </Routes>
       <Footer />
     </div>

@@ -58,7 +58,7 @@ function Contactos() {
     console.log('Dados do formulário:', formData);
   };
   return (
-    <div>
+    <div id="contactos">
       <div className="scrollable-content">
         <div
           style={{
@@ -179,15 +179,18 @@ function Contactos() {
                   </Col>
                 </Form.Group>
                 <br></br>
-                <Button type='submit' disabled={!formValid}>
-                  Enviar
-                </Button>
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  <Button variant="outline-dark" type='submit' disabled={!formValid} style={{ fontSize: '22px' }}>
+                    Enviar
+                  </Button>
+                </div>
+
               </Form>
             </Card.Body>
           </Card>
         </div>
       </ContentContainer>
-    </div>
+    </div >
   );
 }
 

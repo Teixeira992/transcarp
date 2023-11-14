@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ContentContainer from './ContentContainer';
 import { Col, Row, Card, Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 
 
 function HomePage() {
@@ -16,7 +17,7 @@ function HomePage() {
 
 
   return (
-    <div>
+    <div id='servicos'>
       <div className="scrollable-content">
         <div
           style={{
@@ -48,13 +49,13 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row >
-                <Col xs={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image' />
+              <Row>
+                <Col xs={12} md={3}>
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
-                <Col xs={9}>
-                  <h3 className='modal-title'>Serviços de Transportes Nacionais e Internacionais</h3>
-                  <div className='modal-text'>
+                <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
+                  <h3 className='modal-title mt-3 mt-md-0'>Serviços de Transportes Nacionais e Internacionais</h3>
+                  <div className='modal-text mt-3 mt-md-0'>
                     A Transcarp é especializada em transportar cargas completas e oferece soluções
                     eficientes para a distribuição de mercadorias. Com a capacidade de transportar
                     até 24.000 quilogramas, estamos preparados para atender às necessidades dos nossos
@@ -64,13 +65,15 @@ function HomePage() {
                     logísticas personalizadas, garantindo que as mercadorias cheguem ao destino com
                     segurança e dentro do prazo estipulado.
                   </div>
-                  <div className='modal-foter'>
+                  <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        Pedir Cotação
-                      </Button> </div>
+                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Pedir Cotação
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-
                 </Col>
               </Row>
             </Modal.Body>
@@ -92,25 +95,27 @@ function HomePage() {
           >
             <Modal.Body >
               <Row >
-                <Col xs={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image' />
+                <Col xs={12} md={3}>
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
-                <Col xs={9}>
-                  <h3 className='modal-title'>Logísitica e Armazenagem</h3>
-                  <div className='modal-text'>
+                <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
+                  <h3 className='modal-title mt-3 mt-md-0'>Logísitica e Armazenagem</h3>
+                  <div className='modal-text mt-3 mt-md-0'>
                     A nossa empresa disponibiliza serviços de logística e armazenagem personalizados
                     e flexíveis, ajustados às suas necessidades. Asseguramos soluções à medida para
                     otimizar a gestão da sua cadeia de abastecimento, oferecendo eficiência e economia.
                     Pode contar connosco para simplificar os desafios logísticos do seu negócio e armazenar
                     os seus produtos com total segurança e flexibilidade.
                   </div>
-                  <div className='modal-foter'>
+                  <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        Pedir Cotação
-                      </Button> </div>
+                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Pedir Cotação
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-
                 </Col>
               </Row>
             </Modal.Body>
@@ -132,12 +137,12 @@ function HomePage() {
           >
             <Modal.Body >
               <Row >
-                <Col xs={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image' />
+                <Col xs={12} md={3}>
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
-                <Col xs={9}>
-                  <h3 className='modal-title'>Distribuição Porta-a-Porta</h3>
-                  <div className='modal-text'>
+                <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
+                  <h3 className='modal-title mt-3 mt-md-0'>Distribuição Porta-a-Porta</h3>
+                  <div className='modal-text mt-3 mt-md-0'>
                     Oferecemos um serviço de recolha e entrega de mercadorias no próprio dia ou no dia seguinte
                     em toda a região Norte de Portugal Continental e na Galiza (Espanha). Com a nossa eficiente
                     rede de distribuição, garantimos que as suas mercadorias sejam recolhidas e entregues com
@@ -145,13 +150,15 @@ function HomePage() {
                     assegurar que as suas entregas sejam feitas de forma eficiente em ambas as regiões,
                     proporcionando-lhe uma solução de logística ágil e confiável.
                   </div>
-                  <div className='modal-foter'>
+                  <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        Pedir Cotação
-                      </Button> </div>
+                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Pedir Cotação
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-
                 </Col>
               </Row>
             </Modal.Body>
@@ -175,12 +182,12 @@ function HomePage() {
           >
             <Modal.Body >
               <Row >
-                <Col xs={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image' />
+                <Col xs={12} md={3}>
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
-                <Col xs={9}>
-                  <h3 className='modal-title'>Transportes Urgentes</h3>
-                  <div className='modal-text'>
+                <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
+                  <h3 className='modal-title mt-3 mt-md-0'>Transportes Urgentes</h3>
+                  <div className='modal-text mt-3 mt-md-0'>
                     Oferecemos um serviço expresso que garante entrega rápida e segura de pequenos
                     volumes em todo o território de Portugal Continental e na Galiza (Espanha). Com
                     a nossa rede eficiente, pode contar com entregas ágeis e confiáveis, permitindo
@@ -188,13 +195,15 @@ function HomePage() {
                     é proporcionar conveniência e eficácia, assegurando que as suas entregas sejam
                     realizadas de forma expedita e segura em ambas as regiões.
                   </div>
-                  <div className='modal-foter'>
+                  <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        Pedir Cotação
-                      </Button> </div>
+                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Pedir Cotação
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-
                 </Col>
               </Row>
             </Modal.Body>
@@ -216,12 +225,12 @@ function HomePage() {
           >
             <Modal.Body >
               <Row >
-                <Col xs={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image' />
+                <Col xs={12} md={3}>
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
-                <Col xs={9}>
-                  <h3 className='modal-title'>Mudanças</h3>
-                  <div className='modal-text'>
+                <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
+                  <h3 className='modal-title mt-3 mt-md-0'>Mudanças</h3>
+                  <div className='modal-text mt-3 mt-md-0'>
                     Dispomos de veículos e pessoal especializado para realizar qualquer serviço de mudanças.
                     Independentemente do tamanho ou da complexidade da sua mudança, estamos preparados para
                     garantir um serviço eficiente e de qualidade. Os nossos profissionais experientes cuidarão
@@ -229,13 +238,15 @@ function HomePage() {
                     cuidado e segurança. Conte connosco para tornar a sua mudança uma experiência tranquila
                     e sem preocupações.
                   </div>
-                  <div className='modal-foter'>
+                  <div className='modal-foter  mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        Pedir Cotação
-                      </Button> </div>
+                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                          Pedir Cotação
+                        </a>
+                      </Button>
+                    </div>
                   </div>
-
                 </Col>
               </Row>
             </Modal.Body>

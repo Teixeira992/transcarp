@@ -6,14 +6,13 @@ import { FaWarehouse, FaHome, FaTruckMoving, FaGlobe } from 'react-icons/fa';
 import { PiTruck } from 'react-icons/pi';
 import { TbUrgent, TbHomeMove } from 'react-icons/tb';
 import { FaTruckFast } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
 
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
   const videoMP4 = `${process.env.PUBLIC_URL}/transcarp_low.mp4`;
   return (
-    <div>
+    <div id='home'>
       <div style={{ position: 'relative' }}>
         <video autoPlay loop muted className="video-style">
           <source src={videoMP4} type="video/mp4" />
@@ -38,7 +37,7 @@ function HomePage() {
           </div>
         </Row>
         <div className='title-homep-servicos'>Os nossos Serviços</div>
-        <Link to="/servicos" style={{ textDecoration: "none" }}>
+        <a href="#servicos" style={{ textDecoration: "none" }} replace>
           <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }}>
             <Col className='servicos-col'>
               <Card className="card-highlight">
@@ -87,7 +86,7 @@ function HomePage() {
               </Card>
             </Col>
           </Row>
-        </Link>
+        </a>
         <div className="row justify-content-center" style={{ marginTop: '100px' }}>
           <div className="col-12 col-md-6 d-flex justify-content-center">
             <Card className='card-homep-contactos card-large'>
@@ -96,7 +95,7 @@ function HomePage() {
                   <BsTelephonePlusFill size={50}></BsTelephonePlusFill>
                   <br></br>
                   <br></br>
-                  <a href='#/contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Contacte-nos</h1></a>
+                  <a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Contacte-nos</h1></a>
                   <br></br>
                   <p>+351 123123123</p>
                   <p>+351 123123123</p>
@@ -111,7 +110,7 @@ function HomePage() {
                   <BsPencilSquare size={50}></BsPencilSquare>
                   <br></br>
                   <br></br>
-                  <a href='#/contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
+                  <a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
                   <br></br>
                   <p>Preencha o formulário para que consigamos dar a melhor solução ao seu pedido</p>
                 </Card.Text>
