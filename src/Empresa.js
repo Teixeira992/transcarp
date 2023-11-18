@@ -27,7 +27,7 @@ function HomePage() {
       </div>
       <ContentContainer>
         <div>
-          <Row className='sobre-nos-title'>Sobre nós</Row>
+          <Row className='sobre-nos-title' id='sobrenos'>Sobre nós</Row>
           <p className='sobre-nos-text '>Há mais de 30 anos na TRANSCARP trabalhamos para ajudar os nossos clientes a encontrarem as melhores
             soluções para os seus negócios. Há mais de duas gerações que as distâncias e as fronteiras são desafios
             que superamos diariamente, com rigor e profissionalismo, garantindo sempre um serviço de qualidade
@@ -39,7 +39,7 @@ function HomePage() {
             chegam rapidamente e em segurança ao seu destino.
           </p>
 
-          <Row className='sobre-nos-title'>Galeria</Row>
+          <Row className='sobre-nos-title' id='galeria'>Galeria</Row>
           <PhotoAlbum photos={photos}
             layout="rows"
             targetRowHeight={200}
@@ -54,7 +54,7 @@ function HomePage() {
             plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
           />
 
-          <Row className='sobre-nos-title'>Certificações</Row>
+          <Row className='sobre-nos-title' id='certificacoes'>Certificações</Row>
           <div className="container-cert">
             <div className="imagem-cert">
               <img src={certUrl} alt="cert-img" />

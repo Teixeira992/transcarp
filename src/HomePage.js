@@ -110,7 +110,7 @@ function HomePage() {
                   <BsPencilSquare size={50}></BsPencilSquare>
                   <br></br>
                   <br></br>
-                  <a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
+                  <a href='#pedidocotacao' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
                   <br></br>
                   <p>Preencha o formulário para que consigamos dar a melhor solução ao seu pedido</p>
                 </Card.Text>

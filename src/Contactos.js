@@ -95,7 +95,7 @@ function Contactos() {
             </Card.Body>
           </Card>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }} id="pedidocotacao">
           <Card className='card-contactos'>
             <Card.Header className='card-contactos-header'>Pedido de Cotação</Card.Header>
             <Card.Body>

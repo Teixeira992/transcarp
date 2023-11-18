@@ -3,7 +3,6 @@ import { useState } from 'react';
 import ContentContainer from './ContentContainer';
 import { Col, Row, Card, Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
-import { Link } from 'react-router-dom';
 
 
 function HomePage() {
@@ -68,7 +67,7 @@ function HomePage() {
                   <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <a href="#pedidocotacao" style={{ textDecoration: 'none', color: 'inherit' }}>
                           Pedir Cotação
                         </a>
                       </Button>
@@ -110,7 +109,7 @@ function HomePage() {
                   <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <a href="#pedidocotacao" style={{ textDecoration: 'none', color: 'inherit' }}>
                           Pedir Cotação
                         </a>
                       </Button>
@@ -153,7 +152,7 @@ function HomePage() {
                   <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <a href="#pedidocotacao" style={{ textDecoration: 'none', color: 'inherit' }}>
                           Pedir Cotação
                         </a>
                       </Button>
@@ -198,7 +197,7 @@ function HomePage() {
                   <div className='modal-foter mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <a href="#pedidocotacao" style={{ textDecoration: 'none', color: 'inherit' }}>
                           Pedir Cotação
                         </a>
                       </Button>
@@ -241,7 +240,7 @@ function HomePage() {
                   <div className='modal-foter  mt-3 mt-md-0'>
                     <div> Contacte-nos |
                       <Button variant="outline-dark" style={{ fontSize: '20px', marginLeft: '10px' }} >
-                        <a href="#contactos" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <a href="#pedidocotacao" style={{ textDecoration: 'none', color: 'inherit' }}>
                           Pedir Cotação
                         </a>
                       </Button>

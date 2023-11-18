@@ -9,27 +9,29 @@ function Footer() {
                 <div className="footer-column">
                     <a href="#empresa">
                         <h4>Empresa</h4>
-                        <br></br>
-                        <p>Sobre nós</p>
-                        <p>Galeria</p>
-                        <p>Certificações</p>
                     </a>
+                    <br></br>
+                    <a href="#sobrenos"><p>Sobre nós</p></a>
+                    <a href="#galeria"><p>Galeria</p></a>
+                    <a href="#certificacoes"><p>Certificações</p></a>
                 </div>
                 <div class="footer-column">
                     <a href="#servicos">
                         <h4>Serviços</h4>
-                        <br></br>
-                        <p>Os nossos Serviços</p>
                     </a>
+                    <br></br>
+                    <a href="#servicos"><p>Os nossos Serviços</p></a>
+
                 </div>
                 <div class="footer-column">
                     <a href="#contactos">
                         <h4>Contactos</h4>
-                        <br></br>
-                        <p>Contactos</p>
-                        <p>Morada</p>
-                        <p>Pedidos de Cotação</p>
                     </a>
+                    <br></br>
+                    <a href="#contactos"><p>Contactos</p></a>
+                    <a href="#contactos"><p>Morada</p></a>
+                    <a href="#pedidocotacao"><p>Pedidos de Cotação</p></a>
+
                 </div>
             </div>
 

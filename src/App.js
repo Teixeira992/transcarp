@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import SidebarMenu from './SideBar';
 import { BsJustify } from 'react-icons/bs';
 import HomePage from './HomePage';
 import Footer from './Footer';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Contactos from './Contactos';
 import Servicos from './Servicos';
 import Empresa from './Empresa';
@@ -46,7 +46,11 @@ const App = () => {
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/contactos" element={<Contactos />} />
+        <Route path="/pedidocotacao" element={<Contactos />} />
         <Route path="/empresa" element={<Empresa />} />
+        <Route path="/sobrenos" element={<Empresa />} />
+        <Route path="/galeria" element={<Empresa />} />
+        <Route path="/certificacoes" element={<Empresa />} />
         <Route path="/servicos" element={<Servicos />} />
         <Route path="/40anos" element={<Aniversario />} />
         <Route path="/" element={<HomePage />} />
