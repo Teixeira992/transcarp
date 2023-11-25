@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ContentContainer from './ContentContainer';
-import { Card, Col, Row, Form, Button } from 'react-bootstrap';
+import { Card, Col, Row, Form, Button, Modal, Spinner } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 
 function Contactos() {
   const [formData, setFormData] = useState({
@@ -52,11 +53,66 @@ function Contactos() {
     setFormValid(formIsValid);
   }
 
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar lógica para lidar com o envio do formulário
-    console.log('Dados do formulário:', formData);
+    setLoading(true); // Inicia o spinner
+
+    // Your EmailJS service ID, template ID, and Public Key
+    const serviceId = 'service_0ib36xq';
+    const templateId = 'template_ms897ys';
+    const publicKey = 'iQrpWpOPD5tzTFRVG';
+
+    // Create a new object that contains dynamic template params
+    const templateParams = {
+      from_name: formData.nome,
+      from_email: formData.email,
+      from_telemovel: formData.telemovel,
+      from_morada: formData.morada,
+      to_name: 'Transcarp',
+      message: formData.texto,
+    };
+
+    // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        showSuccess();
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        showError();
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
+
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showErrorModal, setShowErrorModal] = useState(false);
+
+  const showSuccess = () => {
+    setShowSuccessModal(true);
+    setFormValid(false);
+    setFormData({
+      email: '',
+      nome: '',
+      texto: '',
+      morada: '',
+      telemovel: '',
+    });
+  };
+
+  const showError = () => {
+    setShowErrorModal(true);
+  };
+
+  const hideModals = () => {
+    setShowSuccessModal(false);
+    setShowErrorModal(false);
+  };
+
   return (
     <div id="contactos">
       <div className="scrollable-content">
@@ -78,8 +134,6 @@ function Contactos() {
                     <h5>Contactos Telefónicos</h5>
                     <p>+351 251 795 345</p>
                     <p>+351 964 514 005</p>
-                    <h5>Fax</h5>
-                    <p>+351 251 796 780</p>
                     <h5>Email</h5>
                     <p>geral@transcarp.pt</p>
                   </Card.Text>
@@ -181,14 +235,31 @@ function Contactos() {
                 <br></br>
                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                   <Button variant="outline-dark" type='submit' disabled={!formValid} style={{ fontSize: '22px' }}>
-                    Enviar
+                    <span> Enviar {loading && (
+                      <Spinner animation="border" role="status" style={{ marginLeft: '10px' }}>
+                      </Spinner>
+                    )}
+                    </span>
                   </Button>
                 </div>
+
 
               </Form>
             </Card.Body>
           </Card>
         </div>
+        <Modal centered show={showSuccessModal || showErrorModal} onHide={hideModals}>
+          <Modal.Header className='modal-email-title' closeButton>
+            <Modal.Title>
+              {showSuccessModal ? 'Sucesso' : 'Erro'}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body closeButton>
+            {showSuccessModal
+              ? 'O email foi enviado com sucesso!'
+              : 'O envio do email falhou. Por favor, tente novamente.'}
+          </Modal.Body>
+        </Modal>
       </ContentContainer>
     </div >
   );

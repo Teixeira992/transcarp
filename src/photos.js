@@ -1,30 +1,19 @@
 const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
 
 const unsplashLink = (id, width, height) =>
-    `https://source.unsplash.com/${id}/${width}x${height}`;
+    `${process.env.PUBLIC_URL}/${id}`;
 
 const unsplashPhotos = [
-    { id: "8gVv6nxq6gY", width: 1080, height: 800 },
-    { id: "Dhmn6ete6g8", width: 1080, height: 1620 },
-    { id: "RkBTPqPEGDo", width: 1080, height: 720 },
-    { id: "Yizrl9N_eDA", width: 1080, height: 721 },
-    { id: "KG3TyFi0iTU", width: 1080, height: 1620 },
-    { id: "Jztmx9yqjBw", width: 1080, height: 607 },
-    { id: "-heLWtuAN3c", width: 1080, height: 608 },
-    { id: "xOigCUcFdA8", width: 1080, height: 720 },
-    { id: "1azAjl8FTnU", width: 1080, height: 1549 },
-    { id: "ALrCdq-ui_Q", width: 1080, height: 720 },
-    { id: "twukN12EN7c", width: 1080, height: 694 },
-    { id: "9UjEyzA6pP4", width: 1080, height: 1620 },
-    { id: "sEXGgun3ZiE", width: 1080, height: 720 },
-    { id: "S-cdwrx-YuQ", width: 1080, height: 1440 },
-    { id: "q-motCAvPBM", width: 1080, height: 1620 },
-    { id: "Xn4L310ztMU", width: 1080, height: 810 },
-    { id: "iMchCC-3_fE", width: 1080, height: 610 },
-    { id: "X48pUOPKf7A", width: 1080, height: 160 },
-    { id: "GbLS6YVXj0U", width: 1080, height: 810 },
-    { id: "9CRd1J1rEOM", width: 1080, height: 720 },
-    { id: "xKhtkhc9HbQ", width: 1080, height: 1440 },
+    { id: "galeria_1.jpg", width: 1080, height: 900 },
+    { id: "galeria_2.jpg", width: 1080, height: 1620 },
+    { id: "galeria_3.jpg", width: 1080, height: 720 },
+    { id: "galeria_4.jpg", width: 1080, height: 721 },
+    { id: "galeria_5.jpg", width: 1080, height: 1620 },
+    { id: "galeria_6.jpg", width: 1080, height: 607 },
+    { id: "galeria_7.jpg", width: 1080, height: 608 },
+    { id: "galeria_8.jpg", width: 1080, height: 720 },
+    { id: "galeria_9.jpg", width: 1080, height: 1549 },
+    { id: "galeria_10.jpg", width: 1080, height: 720 },
 ];
 
 const photos = unsplashPhotos.map((photo) => {

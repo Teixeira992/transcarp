@@ -42,7 +42,7 @@ const App = () => {
           </Button>
         </Nav>
       </Navbar>
-      <SidebarMenu showMenu={showMenu} toggleMenu={toggleMenu} />
+      <SidebarMenu showMenu={showMenu} toggleMenu={toggleMenu} setShowMenu={setShowMenu} />
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/contactos" element={<Contactos />} />

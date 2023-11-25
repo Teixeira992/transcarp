@@ -10,11 +10,11 @@ import { FaTruckFast } from 'react-icons/fa6';
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
-  const videoMP4 = `${process.env.PUBLIC_URL}/transcarp_low.mp4`;
+  const videoMP4 = `${process.env.PUBLIC_URL}/pag_inicial.mp4`;
   return (
     <div id='home'>
       <div style={{ position: 'relative' }}>
-        <video autoPlay loop muted className="video-style">
+        <video autoPlay loop muted playsInline className="video-style">
           <source src={videoMP4} type="video/mp4" />
         </video>
         <div className="text-overlay">
@@ -28,11 +28,6 @@ function HomePage() {
             </div>
             <div className="homep-first-div-text">
               <div className='homep-first-div-title'>Conectamos destinos, entregamos excelência</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
         </Row>
@@ -97,8 +92,8 @@ function HomePage() {
                   <br></br>
                   <a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Contacte-nos</h1></a>
                   <br></br>
-                  <p>+351 123123123</p>
-                  <p>+351 123123123</p>
+                  <p>+351 251795345</p>
+                  <p>+351 964514005</p>
                 </Card.Text>
               </Card.Body>
             </Card>

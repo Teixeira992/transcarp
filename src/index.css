@@ -207,21 +207,22 @@ footer {
 }
 
 .side-bar {
-  opacity: 0.9;
+  opacity: 0.8;
   padding: 20px 0;
+  background-color: #F9A800 !important;
 }
 
 @keyframes colorChange {
   0% {
-    background-color: #F9A800;
+    background-color: #3F681A;
   }
 
   50% {
-    background-color: #FFD700;
+    background-color: #4f7a0a;
   }
 
   100% {
-    background-color: #F9A800;
+    background-color: #67831c;
   }
 }
 
@@ -233,12 +234,12 @@ footer {
 }
 
 .custom-list-item:hover {
-  background-color: #F9A800;
+  background-color: #3F681A;
   animation: colorChange 2s infinite;
 }
 
 .custom-link {
-  color: #3F681A !important;
+  color: black !important;
   font-size: 20px !important;
   font-weight: bold !important;
 }
@@ -270,7 +271,7 @@ footer {
 
 .homep-first-div-title {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin-bottom: 15px;
 }
@@ -459,6 +460,14 @@ footer {
     width: 300px;
     height: 450px;
   }
+}
+
+.modal-email {
+  color: rgba(175, 2, 2, 0.8) !important;
+}
+
+.modal-email-title {
+  margin-top: -20px;
 }
 
 .servicos-modal {

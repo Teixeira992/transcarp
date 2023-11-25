@@ -6,8 +6,12 @@ import Modal from 'react-bootstrap/Modal';
 
 
 function HomePage() {
-  const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
-  const imageUrl1 = `${process.env.PUBLIC_URL}/IMG_6897.jpg`;
+  const imageUrl1 = `${process.env.PUBLIC_URL}/transportes_nacionais_internacionais.jpg`;
+  const imageUrl2 = `${process.env.PUBLIC_URL}/logisitica_armazenagem.jpg`;
+  const imageUrl3 = `${process.env.PUBLIC_URL}/distribuição_porta_a_porta.jpg`;
+  const imageUrl4 = `${process.env.PUBLIC_URL}/transportes_urgentes.jpg`;
+  const imageUrl5 = `${process.env.PUBLIC_URL}/mudancas.jpg`;
+
   const [serv1Show, setServ1Show] = useState(false);
   const [serv2Show, setServ2Show] = useState(false);
   const [serv3Show, setServ3Show] = useState(false);
@@ -25,16 +29,11 @@ function HomePage() {
         ></div>
       </div>
       <ContentContainer>
-        {/*
-        <div>
-          <p>Na TRANSCARP oferecemos aos nossos clientes um conjunto cada vez mais completo de serviços nas áreas dos transportes nacionais e internacionais, logística e armazenagem, distribuição, entregas rápidas e mudanças</p>
-        </div>
-          */}
         <div className='servicos-title'>Os nossos serviços</div>
         <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ1Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl1} alt="Card image" />
               <Card.Body>
                 <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
               </Card.Body>
@@ -48,7 +47,7 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row>
+              <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
                   <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
@@ -79,7 +78,7 @@ function HomePage() {
           </Modal>
           <Col className='servicos-col'>
             <Card onClick={() => setServ2Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl2} alt="Card image" />
               <Card.Body>
                 <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
               </Card.Body>
@@ -93,9 +92,9 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row >
+              <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl2} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Logísitica e Armazenagem</h3>
@@ -121,7 +120,7 @@ function HomePage() {
           </Modal>
           <Col onClick={() => setServ3Show(true)} className='servicos-col'>
             <Card onClick={() => setServ3Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl3} alt="Card image" />
               <Card.Body>
                 <Card.Title>DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
               </Card.Body>
@@ -135,9 +134,9 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row >
+              <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl3} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Distribuição Porta-a-Porta</h3>
@@ -166,7 +165,7 @@ function HomePage() {
         <Row md={3} xs={1} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ4Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl4} alt="Card image" />
               <Card.Body>
                 <Card.Title>TRANSPORTES URGENTES</Card.Title>
               </Card.Body>
@@ -180,9 +179,9 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row >
+              <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl4} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Transportes Urgentes</h3>
@@ -209,7 +208,7 @@ function HomePage() {
           </Modal>
           <Col className='servicos-col'>
             <Card onClick={() => setServ5Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl5} alt="Card image" />
               <Card.Body>
                 <Card.Title>MUDANÇAS</Card.Title>
               </Card.Body>
@@ -223,9 +222,9 @@ function HomePage() {
             dialogClassName="servicos-modal"
           >
             <Modal.Body >
-              <Row >
+              <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl5} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Mudanças</h3>
