@@ -45,7 +45,7 @@ function Aniversario() {
               </p>
             </div>
             <div className="imagem-aniv">
-              <img src={anivImg} alt="aniv" />
+              <img src={anivImg} alt="aniv" loading="lazy" />
             </div>
           </div>
         </Row>

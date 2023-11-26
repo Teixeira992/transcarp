@@ -49,7 +49,7 @@ function HomePage() {
             <Modal.Body >
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl1} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Serviços de Transportes Nacionais e Internacionais</h3>
@@ -94,7 +94,7 @@ function HomePage() {
             <Modal.Body >
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl2} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl2} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Logísitica e Armazenagem</h3>
@@ -136,7 +136,7 @@ function HomePage() {
             <Modal.Body >
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl3} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl3} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Distribuição Porta-a-Porta</h3>
@@ -181,7 +181,7 @@ function HomePage() {
             <Modal.Body >
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl4} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl4} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Transportes Urgentes</h3>
@@ -224,7 +224,7 @@ function HomePage() {
             <Modal.Body >
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={3}>
-                  <img src={imageUrl5} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' />
+                  <img src={imageUrl5} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
                   <h3 className='modal-title mt-3 mt-md-0'>Mudanças</h3>

@@ -60,9 +60,9 @@ function Contactos() {
     setLoading(true); // Inicia o spinner
 
     // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = 'service_0ib36xq';
-    const templateId = 'template_ms897ys';
-    const publicKey = 'iQrpWpOPD5tzTFRVG';
+    const serviceId = 'service_lo2o7wq';
+    const templateId = 'template_r3zwiot';
+    const publicKey = 'GXRDI0-d7nzL7BktW';
 
     // Create a new object that contains dynamic template params
     const templateParams = {
@@ -131,18 +131,26 @@ function Contactos() {
               <Row>
                 <Col>
                   <Card.Text >
-                    <h5>Contactos Telefónicos</h5>
-                    <p>+351 251 795 345</p>
-                    <p>+351 964 514 005</p>
-                    <h5>Email</h5>
-                    <p>geral@transcarp.pt</p>
+                    <span>Contactos Telefónicos</span>
+                    <br />
+                    <span>+351 251 795 345</span>
+                    <br />
+                    <span>+351 964 514 005</span>
+                    <br />
+                    <span>Email</span>
+                    <br />
+                    <span>geral@transcarp.pt</span>
                   </Card.Text>
                 </Col>
                 <Col>
                   <Card.Text >
-                    <h5>Morada</h5>
-                    <p>Zona Industrial - Pólo 1</p>
-                    <p><b>4920-247</b> Vila Nova de Cerveira</p>
+                    <span>Morada</span>
+                    <br />
+                    <span>Zona Industrial - Pólo 1</span>
+                    <br />
+                    <span><b>4920-247</b> Vila Nova de Cerveira</span>
+                    <br />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.2737507642964!2d-8.695952784353208!3d41.972930067453056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25973018ba5869%3A0x17e3dc94e6cbafd6!2sTranscarp-transportes+E+Log%C3%ADstica+Lda!5e0!3m2!1spt-PT!2spt!4v1492440883874" title="description" className='maps' ></iframe>
                   </Card.Text>
                 </Col>
               </Row>

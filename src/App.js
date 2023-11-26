@@ -10,6 +10,8 @@ import Servicos from './Servicos';
 import Empresa from './Empresa';
 import Aniversario from './Aniversario';
 import PaginaDeErro from './PaginaDeErro';
+import CookieBanner from './Cookie';
+import Privacidade from './Privacidade';
 
 
 const App = () => {
@@ -54,8 +56,10 @@ const App = () => {
         <Route path="/servicos" element={<Servicos />} />
         <Route path="/40anos" element={<Aniversario />} />
         <Route path="/" element={<HomePage />} />
+        <Route path="/privacidade" element={<Privacidade />} />
         <Route path="*" element={<PaginaDeErro />} />
       </Routes>
+      <CookieBanner></CookieBanner>
       <Footer />
     </div>
   );

@@ -15,7 +15,7 @@ function Footer() {
                     <a href="#galeria"><p>Galeria</p></a>
                     <a href="#certificacoes"><p>Certificações</p></a>
                 </div>
-                <div class="footer-column">
+                <div className="footer-column">
                     <a href="#servicos">
                         <h4>Serviços</h4>
                     </a>
@@ -23,7 +23,7 @@ function Footer() {
                     <a href="#servicos"><p>Os nossos Serviços</p></a>
 
                 </div>
-                <div class="footer-column">
+                <div className="footer-column">
                     <a href="#contactos">
                         <h4>Contactos</h4>
                     </a>
@@ -43,6 +43,9 @@ function Footer() {
                 </div>
                 <div className="logo">
                     <img src={logo} alt="Logo" className='logo-img' />
+                </div>
+                <div className="footer-privacidade">
+                    <a href="#privacidade"><p>Política de Privacidade</p></a>
                 </div>
             </div>
         </footer >

@@ -32,31 +32,31 @@ function HomePage() {
           </div>
         </Row>
         <div className='title-homep-servicos'>Os nossos Serviços</div>
-        <a href="#servicos" style={{ textDecoration: "none" }} replace>
+        <a href="#servicos" style={{ textDecoration: "none" }}>
           <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }}>
             <Col className='servicos-col'>
               <Card className="card-highlight">
                 <span><PiTruck size={80} style={{ marginRight: '30px' }}></PiTruck > <FaGlobe size={70}></FaGlobe></span>
-                <Card.Text className='card-highlight-text'>
-                  <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
-                </Card.Text>
+                <Card.Title className='card-highlight-text'>
+                  <Card.Text>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Text>
+                </Card.Title>
               </Card>
             </Col>
             <Col className='servicos-col' >
               <Card className="card-highlight">
                 <FaHome size={75}></FaHome >
-                <Card.Text className='card-highlight-text'>
-                  <Card.Title className='card-highlight-text' > DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
-                </Card.Text>
+                <Card.Title className='card-highlight-text'>
+                  <Card.Text className='card-highlight-text' > DISTRIBUIÇÃO PORTA-A-PORTA</Card.Text>
+                </Card.Title>
               </Card>
             </Col>
             <Col className='servicos-col' >
               <Card className="card-highlight">
                 <span><FaWarehouse size={75} style={{ marginRight: '30px' }}></FaWarehouse>
                   <BsBoxes size={75}></BsBoxes></span>
-                <Card.Text className='card-highlight-text'>
-                  <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
-                </Card.Text>
+                <Card.Title className='card-highlight-text'>
+                  <Card.Text>LOGÍSTICA E ARMAZENAGEM</Card.Text>
+                </Card.Title>
               </Card>
             </Col>
           </Row>
@@ -66,18 +66,18 @@ function HomePage() {
               <Card className="card-highlight">
                 <span><FaTruckFast size={75} style={{ marginRight: '30px' }}></FaTruckFast >
                   <TbUrgent size={75}></TbUrgent></span>
-                <Card.Text className='card-highlight-text'>
-                  <Card.Title>TRANSPORTES URGENTES</Card.Title>
-                </Card.Text>
+                <Card.Title className='card-highlight-text'>
+                  <Card.Text>TRANSPORTES URGENTES</Card.Text>
+                </Card.Title>
               </Card>
             </Col>
             <Col className='servicos-col'>
               <Card className="card-highlight">
                 <span><FaTruckMoving size={75} style={{ marginRight: '30px' }}></FaTruckMoving >
                   <TbHomeMove size={75}></TbHomeMove></span>
-                <Card.Text className='card-highlight-text'>
-                  <Card.Title>MUDANÇAS</Card.Title>
-                </Card.Text>
+                <Card.Title className='card-highlight-text'>
+                  <Card.Text>MUDANÇAS</Card.Text>
+                </Card.Title>
               </Card>
             </Col>
           </Row>
@@ -90,10 +90,12 @@ function HomePage() {
                   <BsTelephonePlusFill size={50}></BsTelephonePlusFill>
                   <br></br>
                   <br></br>
-                  <a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}><h1>Contacte-nos</h1></a>
+                  <span className='hp-contactos'><a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}>Contacte-nos</a></span>
                   <br></br>
-                  <p>+351 251795345</p>
-                  <p>+351 964514005</p>
+                  <br></br>
+                  <span>+351 251795345</span>
+                  <br></br>
+                  <span>+351 964514005</span>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -105,9 +107,10 @@ function HomePage() {
                   <BsPencilSquare size={50}></BsPencilSquare>
                   <br></br>
                   <br></br>
-                  <a href='#pedidocotacao' style={{ textDecoration: 'none', color: 'black' }}><h1>Peça uma Cotação</h1></a>
+                  <span className='hp-contactos'><a href='#pedidocotacao' style={{ textDecoration: 'none', color: 'black' }}>Peça uma Cotação</a></span>
                   <br></br>
-                  <p>Preencha o formulário para que consigamos dar a melhor solução ao seu pedido</p>
+                  <br></br>
+                  <span>Preencha o formulário para que consigamos dar a melhor solução ao seu pedido</span>
                 </Card.Text>
               </Card.Body>
             </Card>
