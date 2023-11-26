@@ -131,24 +131,25 @@ function Contactos() {
               <Row>
                 <Col>
                   <Card.Text >
-                    <span>Contactos Telefónicos</span>
+                    <span className='contactos-title'>Contactos Telefónicos</span>
                     <br />
-                    <span>+351 251 795 345</span>
+                    <span className='contactos-text'>+351 251 795 345</span>
                     <br />
-                    <span>+351 964 514 005</span>
+                    <span className='contactos-text'>+351 964 514 005</span>
                     <br />
-                    <span>Email</span>
                     <br />
-                    <span>geral@transcarp.pt</span>
+                    <span className='contactos-title'>Email</span>
+                    <br />
+                    <span className='contactos-text'>geral@transcarp.pt</span>
                   </Card.Text>
                 </Col>
                 <Col>
                   <Card.Text >
-                    <span>Morada</span>
+                    <span className='contactos-title'>Morada</span>
                     <br />
-                    <span>Zona Industrial - Pólo 1</span>
+                    <span className='contactos-text'>Zona Industrial - Pólo 1</span>
                     <br />
-                    <span><b>4920-247</b> Vila Nova de Cerveira</span>
+                    <span className='contactos-text'><b>4920-247</b> Vila Nova de Cerveira</span>
                     <br />
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.2737507642964!2d-8.695952784353208!3d41.972930067453056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd25973018ba5869%3A0x17e3dc94e6cbafd6!2sTranscarp-transportes+E+Log%C3%ADstica+Lda!5e0!3m2!1spt-PT!2spt!4v1492440883874" title="description" className='maps' ></iframe>
                   </Card.Text>

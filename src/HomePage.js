@@ -93,9 +93,9 @@ function HomePage() {
                   <span className='hp-contactos'><a href='#contactos' style={{ textDecoration: 'none', color: 'black' }}>Contacte-nos</a></span>
                   <br></br>
                   <br></br>
-                  <span>+351 251795345</span>
+                  <span>+351 251 795 345</span>
                   <br></br>
-                  <span>+351 964514005</span>
+                  <span>+351 964 514 005</span>
                 </Card.Text>
               </Card.Body>
             </Card>

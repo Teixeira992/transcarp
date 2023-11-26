@@ -677,3 +677,12 @@ footer {
   font-size: 35px;
   font-weight: 500;
 }
+
+.contactos-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contactos-text {
+  font-size: 18px;
+}
