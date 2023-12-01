@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/transcarp/static/css/main.35972739.css",
-    "main.js": "/transcarp/static/js/main.88437015.js",
-    "static/js/787.6f0235c2.chunk.js": "/transcarp/static/js/787.6f0235c2.chunk.js",
+    "main.css": "/transcarp/static/css/main.8003ce07.css",
+    "main.js": "/transcarp/static/js/main.d5d3290c.js",
+    "static/js/787.da6d1e4d.chunk.js": "/transcarp/static/js/787.da6d1e4d.chunk.js",
     "index.html": "/transcarp/index.html",
-    "main.35972739.css.map": "/transcarp/static/css/main.35972739.css.map",
-    "main.88437015.js.map": "/transcarp/static/js/main.88437015.js.map",
-    "787.6f0235c2.chunk.js.map": "/transcarp/static/js/787.6f0235c2.chunk.js.map"
+    "main.8003ce07.css.map": "/transcarp/static/css/main.8003ce07.css.map",
+    "main.d5d3290c.js.map": "/transcarp/static/js/main.d5d3290c.js.map",
+    "787.da6d1e4d.chunk.js.map": "/transcarp/static/js/787.da6d1e4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35972739.css",
-    "static/js/main.88437015.js"
+    "static/css/main.8003ce07.css",
+    "static/js/main.d5d3290c.js"
   ]
 }
