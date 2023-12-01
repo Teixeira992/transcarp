@@ -97,7 +97,7 @@ function HomePage() {
                   <img src={imageUrl2} alt="cardimage1" className='card-image img-fluid mt-3 mt-md-0' loading="lazy" />
                 </Col>
                 <Col xs={12} md={9} style={{ alignSelf: 'center' }}>
-                  <h3 className='modal-title mt-3 mt-md-0'>Logísitica e Armazenagem</h3>
+                  <h3 className='modal-title mt-3 mt-md-0'>Logística e Armazenagem</h3>
                   <div className='modal-text mt-3 mt-md-0'>
                     A nossa empresa disponibiliza serviços de logística e armazenagem personalizados
                     e flexíveis, ajustados às suas necessidades. Asseguramos soluções à medida para
