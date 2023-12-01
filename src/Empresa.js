@@ -23,7 +23,14 @@ function HomePage() {
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6894.jpg)`
           }} className='content-image'
-        ></div>
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/IMG_6904.jpg`}
+            alt='Descrição da imagem'
+            loading='lazy'
+            style={{ display: 'none' }}
+          />
+        </div>
       </div>
       <ContentContainer>
         <div>

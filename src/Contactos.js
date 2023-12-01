@@ -121,7 +121,14 @@ function Contactos() {
             backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6904.jpg)`,
             opacity: 0.5
           }} className='content-image'
-        ></div>
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/IMG_6904.jpg`}
+            alt='Descrição da imagem'
+            loading='lazy'
+            style={{ display: 'none' }}
+          />
+        </div>
       </div>
       <ContentContainer>
         <div style={{ display: 'flex', justifyContent: 'center' }}>

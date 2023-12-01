@@ -26,14 +26,21 @@ function HomePage() {
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL}/IMG_6894.jpg)`
           }} className='content-image'
-        ></div>
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/IMG_6904.jpg`}
+            alt='Descrição da imagem'
+            loading='lazy'
+            style={{ display: 'none' }}
+          />
+        </div>
       </div>
       <ContentContainer>
         <div className='servicos-title'>Os nossos serviços</div>
         <Row md={3} xs={1} style={{ display: 'flex', justifyContent: 'center' }} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ1Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl1} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl1} alt="Card image" loading="lazy" />
               <Card.Body>
                 <Card.Title>SERVIÇO DE TRANSPORTES NACIONAIS E INTERNACIONAIS</Card.Title>
               </Card.Body>
@@ -78,7 +85,7 @@ function HomePage() {
           </Modal>
           <Col className='servicos-col'>
             <Card onClick={() => setServ2Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl2} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl2} alt="Card image" loading="lazy" />
               <Card.Body>
                 <Card.Title>LOGÍSTICA E ARMAZENAGEM</Card.Title>
               </Card.Body>
@@ -120,7 +127,7 @@ function HomePage() {
           </Modal>
           <Col onClick={() => setServ3Show(true)} className='servicos-col'>
             <Card onClick={() => setServ3Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl3} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl3} alt="Card image" loading="lazy" />
               <Card.Body>
                 <Card.Title>DISTRIBUIÇÃO PORTA-A-PORTA</Card.Title>
               </Card.Body>
@@ -165,7 +172,7 @@ function HomePage() {
         <Row md={3} xs={1} className='servicos-row'>
           <Col className='servicos-col'>
             <Card onClick={() => setServ4Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl4} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl4} alt="Card image" loading="lazy" />
               <Card.Body>
                 <Card.Title>TRANSPORTES URGENTES</Card.Title>
               </Card.Body>
@@ -208,7 +215,7 @@ function HomePage() {
           </Modal>
           <Col className='servicos-col'>
             <Card onClick={() => setServ5Show(true)} className='servicos-card'>
-              <Card.Img variant="top" src={imageUrl5} alt="Card image" />
+              <Card.Img variant="top" src={imageUrl5} alt="Card image" loading="lazy" />
               <Card.Body>
                 <Card.Title>MUDANÇAS</Card.Title>
               </Card.Body>

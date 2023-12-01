@@ -24,7 +24,7 @@ function HomePage() {
         <Row>
           <div className="homep-first-div">
             <div className="homep-first-div-img">
-              <img src={imageUrl} alt="Hexagon" />
+              <img src={imageUrl} alt="Hexagon" loading='lazy' />
             </div>
             <div className="homep-first-div-text">
               <div className='homep-first-div-title'>Conectamos destinos, entregamos excelência</div>
