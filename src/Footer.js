@@ -37,7 +37,7 @@ function Footer() {
 
             <div className="second-div">
                 <div className="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100063475000796" target='blank'>
+                    <a href="https://www.facebook.com/profile.php?id=100057384048148" target='blank'>
                         <FaFacebook />
                     </a>
                 </div>
