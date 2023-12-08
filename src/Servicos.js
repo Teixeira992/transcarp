@@ -6,11 +6,11 @@ import Modal from 'react-bootstrap/Modal';
 
 
 function HomePage() {
-  const imageUrl1 = `${process.env.PUBLIC_URL}/galeria_2.jpg`;
+  const imageUrl1 = `${process.env.PUBLIC_URL}/galeria_8.jpg`;
   const imageUrl2 = `${process.env.PUBLIC_URL}/armaz_2.jpg`;
   //const imageUrl3 = `${process.env.PUBLIC_URL}/distribuição_porta_a_porta.jpg`;
   const imageUrl4 = `${process.env.PUBLIC_URL}/galeria_7.jpg`;
-  const imageUrl5 = `${process.env.PUBLIC_URL}/galeria_8.jpg`;
+  const imageUrl5 = `${process.env.PUBLIC_URL}/galeria_2.jpg`;
 
   const [serv1Show, setServ1Show] = useState(false);
   const [serv2Show, setServ2Show] = useState(false);
