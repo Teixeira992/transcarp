@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ContentContainer from './ContentContainer';
 import { Card, Col, Row, Form, Button, Modal, Spinner } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
@@ -15,6 +15,12 @@ function Contactos() {
   const [formValid, setFormValid] = useState(false);
   const [emailError, setEmailError] = useState('');
   const [telemovelError, setTelemovelError] = useState('');
+
+  useEffect(() => {
+    // eslint-disable-next-line
+    validateForm();
+  }, [formData]);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;

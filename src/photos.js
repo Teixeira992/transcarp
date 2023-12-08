@@ -14,6 +14,11 @@ const unsplashPhotos = [
     { id: "galeria_8.jpg", width: 1080, height: 720 },
     { id: "galeria_9.jpg", width: 1080, height: 949 },
     { id: "galeria_10.jpg", width: 1080, height: 490 },
+    { id: "distribuição_porta_a_porta.jpg", width: 1080, height: 690 },
+    { id: "mudancas.jpg", width: 1080, height: 590 },
+    { id: "transportes_urgentes.jpg", width: 1080, height: 690 },
+    { id: "transportes_nacionais_internacionais.jpg", width: 1080, height: 690 },
+
 ];
 
 const photos = unsplashPhotos.map((photo) => {

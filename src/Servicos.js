@@ -6,15 +6,15 @@ import Modal from 'react-bootstrap/Modal';
 
 
 function HomePage() {
-  const imageUrl1 = `${process.env.PUBLIC_URL}/transportes_nacionais_internacionais.jpg`;
-  const imageUrl2 = `${process.env.PUBLIC_URL}/logisitica_armazenagem.jpg`;
-  const imageUrl3 = `${process.env.PUBLIC_URL}/distribuição_porta_a_porta.jpg`;
-  const imageUrl4 = `${process.env.PUBLIC_URL}/transportes_urgentes.jpg`;
-  const imageUrl5 = `${process.env.PUBLIC_URL}/mudancas.jpg`;
+  const imageUrl1 = `${process.env.PUBLIC_URL}/galeria_2.jpg`;
+  const imageUrl2 = `${process.env.PUBLIC_URL}/armaz_2.jpg`;
+  //const imageUrl3 = `${process.env.PUBLIC_URL}/distribuição_porta_a_porta.jpg`;
+  const imageUrl4 = `${process.env.PUBLIC_URL}/galeria_7.jpg`;
+  const imageUrl5 = `${process.env.PUBLIC_URL}/galeria_8.jpg`;
 
   const [serv1Show, setServ1Show] = useState(false);
   const [serv2Show, setServ2Show] = useState(false);
-  const [serv3Show, setServ3Show] = useState(false);
+  //const [serv3Show, setServ3Show] = useState(false);
   const [serv4Show, setServ4Show] = useState(false);
   const [serv5Show, setServ5Show] = useState(false);
 
@@ -125,7 +125,7 @@ function HomePage() {
               </Row>
             </Modal.Body>
           </Modal>
-          <Col onClick={() => setServ3Show(true)} className='servicos-col'>
+          {/*<Col onClick={() => setServ3Show(true)} className='servicos-col'>
             <Card onClick={() => setServ3Show(true)} className='servicos-card'>
               <Card.Img variant="top" src={imageUrl3} alt="Card image" loading="lazy" />
               <Card.Body>
@@ -168,6 +168,7 @@ function HomePage() {
               </Row>
             </Modal.Body>
           </Modal>
+        */}
         </Row>
         <Row md={3} xs={1} className='servicos-row'>
           <Col className='servicos-col'>
