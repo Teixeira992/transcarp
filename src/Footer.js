@@ -13,7 +13,7 @@ function Footer() {
                     <br></br>
                     <a href="#sobrenos"><p>Sobre nós</p></a>
                     <a href="#galeria"><p>Galeria</p></a>
-                    <a href="#certificacoes"><p>Certificações</p></a>
+                    <a href="#certificacoes"><p>Qualidade</p></a>
                 </div>
                 <div className="footer-column">
                     <a href="#servicos">
@@ -46,6 +46,9 @@ function Footer() {
                 </div>
                 <div className="footer-privacidade">
                     <a href="#privacidade"><p>Política de Privacidade</p></a>
+                </div>
+                <div className="reclamacoes">
+                    <a href="https://www.livroreclamacoes.pt/Inicio/" target='blank'><p>Livro de Reclamações</p></a>
                 </div>
             </div>
         </footer >

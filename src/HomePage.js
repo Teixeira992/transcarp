@@ -6,11 +6,19 @@ import { FaWarehouse, FaTruckMoving, FaGlobe } from 'react-icons/fa';
 import { PiTruck } from 'react-icons/pi';
 import { TbUrgent, TbHomeMove } from 'react-icons/tb';
 import { FaTruckFast } from 'react-icons/fa6';
-
+import { useState } from 'react';
+import AnniversaryPopup from './AnniversaryPopup';
 
 function HomePage() {
   const imageUrl = `${process.env.PUBLIC_URL}/IMG_6856.jpg`;
   const videoMP4 = `${process.env.PUBLIC_URL}/pag_inicial.mp4`;
+
+  const [showPopup, setShowPopup] = useState(true);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div id='home'>
       <div style={{ position: 'relative' }}>
@@ -21,6 +29,9 @@ function HomePage() {
         </div>
       </div>
       <ContentContainer>
+        <div>
+          <AnniversaryPopup show={showPopup} handleClose={handleClosePopup} />
+        </div>
         <Row>
           <div className="homep-first-div">
             <div className="homep-first-div-img">
@@ -96,7 +107,7 @@ function HomePage() {
                   <br></br>
                   <span>+351 251 795 345</span>
                   <br></br>
-                  <span>+351 964 514 005</span>
+                  <span>+351 964 642 594</span>
                 </Card.Text>
               </Card.Body>
             </Card>

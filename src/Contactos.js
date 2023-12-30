@@ -148,7 +148,9 @@ function Contactos() {
                     <br />
                     <span className='contactos-text'>+351 251 795 345</span>
                     <br />
-                    <span className='contactos-text'>+351 964 514 005</span>
+                    <span className='contactos-text'>+351 964 642 594</span>
+                    <br />
+                    <span className='contactos-text-custo'>Custo de chamada para a rede fixa e móvel nacional.</span>
                     <br />
                     <br />
                     <span className='contactos-title'>Email</span>
@@ -177,10 +179,10 @@ function Contactos() {
             <Card.Body>
               <Form onSubmit={handleSubmit}>
                 <Form.Group as={Row} controlId='formEmail'>
-                  <Form.Label column sm={2}>
+                  <Form.Label column sm={3}>
                     <h5>Email:</h5>
                   </Form.Label>
-                  <Col sm={10}>
+                  <Col sm={9}>
                     <Form.Control
                       type='email'
                       placeholder='Email'
@@ -194,10 +196,10 @@ function Contactos() {
                 </Form.Group>
                 <br></br>
                 <Form.Group as={Row} controlId='formNome'>
-                  <Form.Label column sm={2}>
+                  <Form.Label column sm={3}>
                     <h5>Nome:</h5>
                   </Form.Label>
-                  <Col sm={10}>
+                  <Col sm={9}>
                     <Form.Control
                       type='text'
                       placeholder='Nome'
@@ -209,10 +211,10 @@ function Contactos() {
                 </Form.Group>
                 <br></br>
                 <Form.Group as={Row} controlId='formTelemovel'>
-                  <Form.Label column sm={2}>
+                  <Form.Label column sm={3}>
                     <h5>Telemóvel:</h5>
                   </Form.Label>
-                  <Col sm={10}>
+                  <Col sm={9}>
                     <Form.Control
                       type='tel' // Pode usar 'text' se preferir
                       placeholder='Número de telemóvel'
@@ -226,10 +228,10 @@ function Contactos() {
                 </Form.Group>
                 <br></br>
                 <Form.Group as={Row} controlId='formMorada'>
-                  <Form.Label column sm={2}>
+                  <Form.Label column sm={3}>
                     <h5>Morada:</h5>
                   </Form.Label>
-                  <Col sm={10}>
+                  <Col sm={9}>
                     <Form.Control
                       type='text'
                       placeholder='Morada'
@@ -241,10 +243,10 @@ function Contactos() {
                 </Form.Group>
                 <br></br>
                 <Form.Group as={Row} controlId='formTexto'>
-                  <Form.Label column sm={2}>
+                  <Form.Label column sm={3}>
                     <h5>Mensagem:</h5>
                   </Form.Label>
-                  <Col sm={10}>
+                  <Col sm={9}>
                     <Form.Control
                       as='textarea'
                       placeholder='Digite a sua mensagem'

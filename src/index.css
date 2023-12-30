@@ -47,6 +47,7 @@ code {
   height: 70vh;
   background-size: cover;
   background-position: center;
+  opacity: 0.65;
 }
 
 @media (max-width: 768px) {
@@ -185,6 +186,7 @@ footer {
   max-width: 60%;
 }
 
+.reclamacoes a,
 .social-icons a,
 .footer-privacidade a {
   color: #fff;
@@ -199,7 +201,7 @@ footer {
 .logo {
   flex-grow: 1;
   text-align: center;
-  margin-left: 120px;
+  margin-left: 10px;
 }
 
 .logo-img {
@@ -207,13 +209,18 @@ footer {
   height: 40px;
 }
 
+.reclamacoes a:hover,
 .footer-privacidade a:hover,
 .social-icons a:hover {
   color: #F9A800;
 }
 
 .footer-privacidade {
-  margin-right: 15px;
+  margin-right: 85px;
+}
+
+.reclamacoes {
+  margin-right: 10px;
 }
 
 /* Adicionar uma media query para telas menores que 600px (ajuste conforme necessário) */
@@ -234,12 +241,17 @@ footer {
   }
 
   .footer-privacidade {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .reclamacoes {
     margin: auto;
   }
 }
 
 .side-bar {
-  opacity: 0.8;
+  opacity: 0.65;
   padding: 20px 0;
   background-color: #F9A800 !important;
 }
@@ -429,6 +441,32 @@ footer {
 
 
 .card-highlight:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s ease;
+  border: 3px solid #3F681A;
+}
+
+
+.card-highlight-qualidade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(63, 104, 26, 0.2) !important;
+  cursor: pointer;
+}
+
+.card-highlight-text-qualidade {
+  text-decoration: none !important;
+  color: #000;
+}
+
+
+.card-highlight-qualidade:hover {
   transform: scale(1.05);
   transition: transform 0.7s ease;
   border: 3px solid #3F681A;
@@ -685,4 +723,36 @@ footer {
 
 .contactos-text {
   font-size: 18px;
+}
+
+.contactos-text-custo {
+  font-size: 14px;
+}
+
+.anniversary-header {
+  background-color: #3F681A;
+  color: #fff;
+}
+
+.anniversary-body {
+  background-color: #F9A800;
+  color: #000;
+  top: -5px;
+}
+
+.anniversary-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.anniversary-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.anniversary-image {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 15px;
+  border-radius: 8px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentContainer from './ContentContainer';
 import { useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -12,9 +12,12 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import photos from './photos';
 
+
 function HomePage() {
   const [index, setIndex] = useState(-1);
   const certUrl = `${process.env.PUBLIC_URL}/certificado.png`;
+  const pdf_1 = `${process.env.PUBLIC_URL}/MGQ_Transcarp_rev3.pdf`;
+  const pdf_2 = `${process.env.PUBLIC_URL}/certificacao_ISO_9001.pdf`;
 
   return (
     <div id='empresa'>
@@ -61,7 +64,7 @@ function HomePage() {
             plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
           />
 
-          <Row className='sobre-nos-title' id='certificacoes'>Certificações</Row>
+          <Row className='sobre-nos-title' id='certificacoes'>Sistema de Gestão de Qualidade</Row>
           <div className="container-cert">
             <div className="imagem-cert">
               <img src={certUrl} alt="cert-img" />
@@ -81,11 +84,28 @@ function HomePage() {
                 integra o pensamento baseado em risco, permitindo não só a fidelização do cliente como também a
                 competitividade da organização assente nos pilares da sustentabilidade.
               </p>
+              <Row md={2} xs={1} style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }} >
+                <Col className='servicos-col'>
+                  <Card className="card-highlight-qualidade">
+                    <Card.Title>
+                      <Card.Text ><a href={pdf_2} target="blank" className='card-highlight-text-qualidade'>Certificação ISO 9001</a></Card.Text>
+                    </Card.Title>
+                  </Card>
+                </Col>
+                <Col className='servicos-col'>
+                  <Card className="card-highlight-qualidade">
+                    <Card.Title className='card-highlight-text-qualidade'>
+                      <Card.Text><a href={pdf_1} target="blank" className='card-highlight-text-qualidade'>MGQ Transcarp rev3</a></Card.Text>
+                    </Card.Title>
+                  </Card>
+                </Col>
+              </Row>
             </div>
           </div>
+
         </div>
-      </ContentContainer>
-    </div>
+      </ContentContainer >
+    </div >
 
   );
 }
